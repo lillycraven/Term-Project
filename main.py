@@ -27,6 +27,16 @@ print(df.head())
 df.columns = df.columns.str.strip()
 
 
+# print(df["Total Owed"].sum())
+# print(df["Total Owed"].mean())
+# print(df["Total Owed"].median())
+# print(df["Total Owed"].max())
+# print(df["Total Owed"].min())
 
-print(df["Total Owed"].sum())
-print(df["Total Owed"].mean())
+
+
+print(df["Shipment Item Subtotal Tax"].sum())
+print(df["Shipment Item Subtotal Tax"].sum() / df["Total Owed"].sum())
+
+df['Order Date'] = pd.to_datetime(df['Order Date'])
+print(df.head())
