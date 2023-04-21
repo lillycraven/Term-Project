@@ -26,9 +26,7 @@ print(df.head())
 # strip leading and trailing whitespaces from column names
 df.columns = df.columns.str.strip()
 
-# access the "Total Charged" column by its exact name
-df["Total Owed"] = df["Total Owed"].str.replace('$','').astype(float)
-print(df.head())
+
 
 print(df["Total Owed"].sum())
 print(df["Total Owed"].mean())
