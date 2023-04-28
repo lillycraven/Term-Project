@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome To Anika and Lilly's Website!</title>
+</head>
+<script type="text/javascript">
+	/* Your JavaScript goes here */
+    function ShowMe()
+            {
+                alert("Welcome to our website! We hope you have fun looking at it!")
+            }
+
+
+	  
+	</script>
+<style>
+    body{
+        background-color:pink
+    }
+    h1{
+        text-align:center; 
+        color:hotpink; 
+        font-style:bold; 
+        background-color: lightcyan; 
+        padding: 4px;
+    }
+    h2{
+        color: black ; 
+        font-style:bold; 
+        padding: 4px; 
+        background-color:lightcyan 
+    }
+    nav {
+        background-color:lightcyan;
+        overflow: hidden;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav li a {
+        display: block;
+        color:black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+        background-color: #111;
+    }
+</style>
+
+<body>
+    <h1>Welcome To Anika and Lilly's Website!</h1>
+    <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5000/">Home</a></li>
+          <li><a href="{{ url_for('static', filename='navtest1.htm') }}"> Results</a></li>
+          <li><a href="{{ url_for('static', filename='navtest2.htm') }}"> Thank you/More </a></li>
+        </ul>
+    </nav>
+    
+    <h2>Introduction to our Project</h2>
+    <input onclick="ShowMe()" type="submit" name="CLICKTHIS" value="CLICKTHIS" />
+
+
+    <p2>In this project we will take Anika's family purchase history from Amazon and use it to find facts and figures that could help them budget and know more about their finances.</p2>
+    <p2>You can do this for your own purchases by downloading your Amazon purchases as a CSV file and inputting the file name into the main.py file we have, and it will calculate the same figures but using your data!</p2>
+    <h3> Our Inspiration for this Project </h3>
+    <p2> We are both business analytic concentrations and very interested in personal finances. We wanted to come up with a website that could help us track our spending habits at amazon and bring attention to what months typically have the highest spending. </p2>
+    <h3> Our Read Me (Also found in our Github) </h3>
+    <p2> Amazon Spending Helper is a tracker that showcases your purchases and how they vary across different time periods. Does your spending go up around Christmas or on late nights during the summer? This program will help you identify an average budget to implement and showcase what you need to cut back on to meet your expected budget. It also has some extra features such as if you have a family account you can find out who is shipping/spending the most as well as a heat map for purchases based on time of day.
+    </p2>
+    <p2>
+    To start off, you will need to gain access to your order history and report data. Click the following link and login in to your amazon account: </p2>
+    <p3>https://amazon.com/gp/privacycentral/dsar/preview.html.</p3>
+    <h4>What does this link do?</h4>
+    <p2>
+    This link requests a csv format of your data which will be sent to you via email; it can take from a couple hours to 7 days. We have provided a sample csv dataset that you make use to test the code for now if needed. Drag your csv from your downloads folder into your IDE. On Main.py, change the name of the csv file (df = [insert name]) and run! 
+    </p2>
+    <h3>Flowchart/Architectural Diagram</h3>
+    <img src="anikasflowchart.jpg" >
+    <img src="flowchart.png">
+
+
+
+</body>
+
+</html>
