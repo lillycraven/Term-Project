@@ -1,8 +1,8 @@
-# Amazon Order History Analysis :money_with_wing:
+# Amazon Order History Analysis :money_mouth_face:
 
 The Amazon Order History Analysis is for those who are looking for a convenient and easy to use resource to analyze their spending habits on Amazon. 
 
-# How to use it? 
+# How to use it? :thinking:
 
 Access our code
 
