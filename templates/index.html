@@ -60,9 +60,25 @@
         background-color: #111;
     }
 </style>
+<script>
+    function changeColor() {
+      var heading = document.getElementById("main-heading");
+      var currentColor = heading.style.color;
+      
+      if (currentColor === "purple") {
+        heading.style.color = "hotpink";
+      } else {
+        heading.style.color = "purple";
+      }
+    }
+    
+    setInterval(changeColor, 1000);
+  
+      
+  </script>
 
 <body>
-    <h1>Welcome To Anika and Lilly's Website!</h1>
+    <h1 id="main-heading">Welcome To Anika and Lilly's Website!</h1>
     <nav>
         <ul>
           <li><a href="https://lillycraven.github.io/Term-Project/templates/index.html">Home</a></li>
@@ -70,13 +86,13 @@
           <li><a href="https://lillycraven.github.io/Term-Project/static/navtest2.htm"> Thank you/More </a></li>
         </ul>
     </nav>
-    
+   
     <h2>Introduction to our Project</h2>
     <input onclick="ShowMe()" type="submit" name="CLICKTHIS" value="CLICKTHIS" />
 
-
     <p2>In this project we will take Anika's family purchase history from Amazon and use it to find facts and figures that could help them budget and know more about their finances.</p2>
-    <p2>You can do this for your own purchases by downloading your Amazon purchases as a CSV file and inputting the file name into the main.py file we have, and it will calculate the same figures but using your data!</p2>
+    <p2>You can do this for your own purchases by downloading your Amazon purchases as a CSV file and inputting the file name into the main.py file we have, and it will calculate the same figures but using your data! Here is the link to our code!  <h2>Our Code</h2>
+        <a href="https://github.com/lillycraven/Term-Project">Github Page</a></p2>
     <h3> Our Inspiration for this Project: </h3>
     <p2> We are both business analytic concentrations and very interested in personal finances. We wanted to come up with a website that could help us track our spending habits at amazon and bring attention to what months typically have the highest spending. </p2>
     <p3>We utilized: the Pandas library, popular for data manipulation and analysis; Matplotlib to create static, interactive, and animated visualizations in Python; numpy for working with arrays and matrices of numerical data; seaborn for statistical data visualization; and re which is powerful tool for searching, replacing, and manipulating text.</p3>
