@@ -60,6 +60,23 @@
         background-color: #111;
     }
 </style>
+<script>
+    function changeColor() {
+      var heading = document.getElementById("main-heading");
+      var currentColor = heading.style.color;
+      
+      if (currentColor === "purple") {
+        heading.style.color = "hotpink";
+      } else {
+        heading.style.color = "purple";
+      }
+    }
+    
+    setInterval(changeColor, 1000);
+  
+      
+  </script>
+
 
 <body>
     <h1 id="main-heading">Welcome To Anika and Lilly's Website!</h1>
